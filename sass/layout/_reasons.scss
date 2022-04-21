@@ -10,9 +10,12 @@
   }
 
   &__list {
-    display: flex;
+    @include flex(flex, center, center);
     flex-wrap: wrap;
     text-align: center;
+    @media screen and (min-width: 320px) and (max-width: 479px) {
+      flex-direction: column;
+    }
   }
 
   &__item {
@@ -21,12 +24,22 @@
     height: 133px;
     padding: 20px 32px;
 
-    &:nth-child(2n + 1) {
-      margin-right: 30px;
+    @media screen and (min-width: 320px) {
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
     }
 
-    &:nth-child(2n + 2) {
-      margin-top: 30px;
+    @media screen and (min-width: 480px) {
+      &:nth-child(2n + 1) {
+        margin-right: 30px;
+        margin-bottom: 0;
+      }
+
+      &:nth-child(2n + 2) {
+        margin-top: 30px;
+        margin-bottom: 0;
+      }
     }
   }
 

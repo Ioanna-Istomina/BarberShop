@@ -14,12 +14,14 @@
 
     color: rgba(157, 164, 189, 0.4);
 
-    .form__input:focus + & {
+    .form__input:focus + &,
+    .form__input:not(:placeholder-shown) + & {
       color: white;
       top: -100%;
     }
 
-    .form__textarea:focus + & {
+    .form__textarea:focus + &,
+    .form__input:not(:placeholder-shown) + & {
       color: white;
       top: -30px;
     }
