@@ -1,0 +1,14 @@
+.gallery {
+  &__wrap {
+    margin-top: 44px;
+  }
+
+  &__list {
+    @include flex(flex, center, null);
+    flex-direction: column;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}

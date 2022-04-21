@@ -1,0 +1,36 @@
+.masters {
+  background-color: #f7f7f7;
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__title {
+    margin-top: 20px;
+    margin-bottom: 44px;
+  }
+
+  &__description {
+    margin-top: 30px;
+  }
+
+  &__member {
+    @include font(400, 18px, 1.38, 0.02em);
+    text-align: center;
+    color: var(--title-color-dark);
+    margin-bottom: 8px;
+  }
+
+  &__position {
+    @include font(400, 14px, 1.35, 0.02em);
+    text-align: center;
+    color: var(--accent-color);
+    margin-bottom: 30px;
+  }
+
+  &__item:not(:last-child) {
+    margin-bottom: 64px;
+  }
+}

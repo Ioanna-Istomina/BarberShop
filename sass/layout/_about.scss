@@ -1,0 +1,27 @@
+.about {
+  &__title {
+    width: 255px;
+    font-family: "Raleway";
+    @include font(700, 24px, 1.17, 0.05em);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    @include mobile {
+      width: 330px;
+    }
+
+    @include mobile {
+      @include font(700, 28px, 1.17, 0.05em);
+    }
+  }
+
+  &__text--first {
+    @include font(400, 16px, 1.6, 0.02em);
+    color: var(--text-color-dark);
+    margin-bottom: 20px;
+  }
+  &__text--last {
+    @include font(400, 14px, 1.8, 0.02em);
+    color: var(--text-color-dark);
+    margin-bottom: 40px;
+  }
+}

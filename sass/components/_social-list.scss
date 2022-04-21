@@ -1,0 +1,25 @@
+.soc-list {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-end;
+  &::before {
+    content: "";
+    width: 60px;
+    height: 1px;
+    margin-right: 21px;
+    background-color: currentColor;
+  }
+
+  &__item {
+    display: flex;
+    & + & {
+      margin-left: 40px;
+    }
+  }
+
+  &__link {
+    @include font(600, 11px, 1.36, 0.2em);
+    color: var(--title-color-dark);
+  }
+}

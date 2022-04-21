@@ -1,0 +1,50 @@
+.reasons {
+  &__title {
+    margin: 20px 0;
+  }
+
+  &__description {
+    @include font(400, 18px, 1.67, 0.02em);
+    color: var(--text-color-dark);
+    margin-bottom: 44px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  &__item {
+    background-color: #f7f7f7;
+    width: 194px;
+    height: 133px;
+    padding: 20px 32px;
+
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+
+    &:nth-child(2n + 2) {
+      margin-top: 30px;
+    }
+  }
+
+  &__count {
+    position: relative;
+    @include font(700, 42px, 1.35, 0.05em);
+    color: var(--title-color-dark);
+    &::after {
+      position: absolute;
+      content: "+";
+      color: var(--accent-color);
+      @include font(600, 16px, 1.3, null);
+      top: 5px;
+    }
+  }
+
+  &__text {
+    @include font(600, 11px, 1.36, null);
+    color: var(--title-color-dark);
+  }
+}

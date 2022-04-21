@@ -1,0 +1,14 @@
+.footer {
+  padding: 44px 31px;
+
+  &__container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  &__copy {
+    @include font(600, 11px, 1.36, 0.2em);
+    color: var(--text-color-light);
+    margin-top: 20px;
+  }
+}

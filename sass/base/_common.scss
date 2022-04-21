@@ -1,0 +1,21 @@
+.body {
+  color: var(--title-color-dark);
+  font-family: "Open Sans", sans-serif;
+}
+
+.pre-title {
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 84px 31px;
+}

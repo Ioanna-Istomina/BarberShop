@@ -1,0 +1,19 @@
+.header {
+  position: absolute;
+
+  &__container {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    fill: white;
+    margin: 40px 0 0 31px;
+  }
+
+  &__menu {
+    margin-top: 48px;
+    margin-right: 31px;
+  }
+}
